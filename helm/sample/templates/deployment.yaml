@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: my-go-app
+spec:
+  schedule: "*/5 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: go-app-container
+              image: vinniekaboom/go-app1:latest
+              imagePullPolicy: IfNotPresent
+          restartPolicy: OnFailure
+          imagePullSecrets:
+            - name: regcred
