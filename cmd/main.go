@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"tutorial2/internal"
-	"tutorial2/pkg/circle"
-	"tutorial2/pkg/rectangle"
+	"github.com/vz250049/fluffy-eureka/internal"
+	"github.com/vz250049/fluffy-eureka/pkg/circle"
+	"github.com/vz250049/fluffy-eureka/pkg/rectangle"
 )
 
 func main() {
